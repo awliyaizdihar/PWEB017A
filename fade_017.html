@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>jQuery Fade</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#que1").click(function () {
+                $("#ans1").fadeToggle();
+            });
+            $("#que2").click(function () {
+                $("#ans2").fadeToggle();
+            });
+            $("#que3").click(function () {
+                $("#ans3").fadeToggle();
+            });
+        });
+    </script>
+    <style>
+        /*        div.box {
+            background-color: rgba(40, 68, 68, 0.945);
+            text-align: center;
+        }*/
+        div.box {
+            background-color: rgb(23, 162, 184);
+        }
+
+        p {
+            color: rgb(234, 241, 235);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        p.judul {
+            font-size: 28px;
+        }
+
+        /*        p.qst {
+            font-size: 18px;
+        }*/
+    </style>
+</head>
+
+<body>
+
+    <div class="container pt-5">
+        <h1 class="display-4 text-center mb-3">CV Madjoe Prima</h1>
+
+        <div class="box">
+            <p class="judul">Frequently Asked Questions</p>
+        </div>
+
+        <input type="button" class="btn btn-outline-info btn-block" id="que1"
+            value="1. Kapan hari kerja CV Majoe Prima?">
+        <div class="box">
+            <p id="ans1">Hari Senin-Jumat pukul 09.00-16.00.</p>
+        </div>
+
+        <input type="button" class="btn btn-outline-info btn-block" id="que2" value="2. Berapa lama masa produksi?">
+        <div class="box">
+            <p id="ans2">Kurang lebih 7 hari kerja.</p>
+        </div>
+
+        <input type="button" class="btn btn-outline-info btn-block" id="que3"
+            value="3. Apakah boleh melakukan pengembalian barang?">
+        <div class="box">
+            <p id="ans3">Diperbolehkan dengan alasan dan bukti yang mendukung. Silakan hubungi CP Admin yang tertera.
+            </p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
